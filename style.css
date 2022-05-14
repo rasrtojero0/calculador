@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     min-height: 100%;
@@ -15,16 +16,30 @@ body{
 
 h1{
     font-size: 50px;
-    text-shadow: #ffffff 1px 1px 1px;
+    color: #ffffff;
+    margin: 10px;
+
+}
+.fondoH1{
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 40px;
+    height: 100px;
+    background: rgb(157,0,255);
+    background: linear-gradient(90deg, rgba(157,0,255,1) 0%, rgba(226,0,255,0.8916608879880077) 74%);
+}
+.fondomain{
+    border-radius: 20px 20px 0px 0px;
+
 }
 
 .container {
+
     min-width: 700px;
     max-width: 1000px;
     height: 2000px;
-    background: rgb(157,0,255);
-    background: linear-gradient(90deg, rgba(157,0,255,1) 0%, rgba(226,0,255,0.8916608879880077) 74%);
-    border-radius: 30px;
+    background-color: #ffffff;
+
+    border-radius: 20px 20px 
   
 }
 
@@ -32,6 +47,10 @@ h1{
     text-align: center;
 }
 
+.fondo{
+
+    background: #bee2f9;
+}
 .titulos{
     margin-left: 10px;
     font-size: 30px;
@@ -58,13 +77,13 @@ h1{
     height: 70px;
     margin: 40px;
     box-shadow:inset 0px 1px 0px 0px #bee2f9;
-    background:linear-gradient(to bottom, #c463ee 5%, #b006ae 100%);
-    background-color:#b206d0;
+    /* background:linear-gradient(to bottom, #c463ee 5%, #b006ae 100%); */
+    background-color:#ff9500;
     border-radius:6px;
-    border:1px solid #6138a3;
+    border:1px solid #ff9500;
     display:inline-block;
     cursor:pointer;
-    color:#67146a;
+    color:#ffffff;
     font-family:Arial;
     font-size:20px;
     font-weight:bold;

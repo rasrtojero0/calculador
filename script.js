@@ -74,7 +74,7 @@ sueldoNeto = sueldoNeto.toFixed(2);
 escribirNeto.innerHTML = ("Sueldo neto: " + sueldoNeto);
 
 if(sueldoBruto >= 225000){
-    document.getElementById("advertencia").style.color = "white";
+    document.getElementById("advertencia").style.color = "red";
 }else{
     document.getElementById("advertencia").style.color = "black";
 }

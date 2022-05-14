@@ -2,32 +2,37 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
- <!-- AGREGAR ALERT SI BRUTO SUPERA $225000 POR GANANCIAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+ 
     <title>CALCULO</title>
 </head>
 <body>
     <div class="container">
         <main class="main">
-            <h1>Calculador de puntos</h1>
+            <div class="fondoH1">
+                <h1>Calculador de puntos</h1>
+           
+            </div>
+            <div class="fondomain">
+                <h4 class="titulos">Puntos del mes<h4>
+                
+                <input type="number" id="texto" placeholder="Cuantos puntos?" class="input">
+                <br>
+                <h4 class="titulos">Años de antigüedad</h4>
+                <input type="number" value="4" id="annos" class="input">
+                <br>
+                <input type="checkbox" id="cb" value="0" class="check" ><p class="textocheck">Con movilidad</p>
+                <br>
+                <input type="button" id="boton" value="Calcular" class="botones">
+                <input type="button" id="reload" value="Borrar" class="botones">
             <hr>
-            <h4 class="titulos">Puntos del mes<h4>
-            
-            <input type="number" id="texto" placeholder="Cuantos puntos?" class="input">
-            <br>
-            <h4 class="titulos">Años de antigüedad</h4>
-            <input type="number" value="4" id="annos" class="input">
-            <br>
-            <input type="checkbox" id="cb" value="0" class="check" ><p class="textocheck">Con movilidad</p>
-            <br>
-            <input type="button" id="boton" value="Calcular" class="botones">
-            <input type="button" id="reload" value="Borrar" class="botones">
-            <hr>
+            </div>
             <div>
                 <p id="mostrarTexto"><p>
             </div>
         </main>
         <footer class="footer">
-            <p><b>Info</b></p>
+            <p><b>INFO</b></p>
             <ul>
                 <li>Sueldo básico: <b>$132912</b></li>
                 <li>Valor punto producción: <b>60.91</b></li>
@@ -42,7 +47,7 @@
             </ul>
             <p id="advertencia">¡Este calculador no tiene en cuenta el impuesto a las ganacias!</p>
             <a href="https://calcularsueldo.com.ar/ganancias.html" target="_blank"><p class="ganancias">Calcular ganacias</p></a>
-            <p class="actualizacion">Ultima actualización: 14/5/2022 </p>
+            <p class="actualizacion">Última actualización: 14/5/2022 </p>
         </footer>
         
         <script src="script.js"></script>
