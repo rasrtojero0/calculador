@@ -7,12 +7,13 @@ body{
 }
 
 h1{
+    font-size: 50px;
     text-shadow: #ffffff 1px 1px 1px;
 }
 
 .container {
     width: 90%;
-    height: 100vmax;
+    height: 2000px;
     background: rgb(157,0,255);
     background: linear-gradient(90deg, rgba(157,0,255,1) 0%, rgba(226,0,255,0.8916608879880077) 74%);
     border-radius: 30px;
@@ -25,14 +26,29 @@ h1{
 
 .titulos{
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 30px;
     text-align: left;
     color: rgb(0, 0, 0);
     text-shadow: #ffffff 1px 1px 1px;
 }
 
+.check{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.textocheck{
+    margin-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    display: inline-block;
+}
+
 .botones{
-    margin: 20px;
+    width: 300px;
+    height: 70px;
+    margin: 40px;
     box-shadow:inset 0px 1px 0px 0px #bee2f9;
     background:linear-gradient(to bottom, #c463ee 5%, #b006ae 100%);
     background-color:#b206d0;
@@ -42,7 +58,7 @@ h1{
     cursor:pointer;
     color:#67146a;
     font-family:Arial;
-    font-size:15px;
+    font-size:20px;
     font-weight:bold;
     padding:6px 24px;
     text-decoration:none;
@@ -54,8 +70,8 @@ h1{
 }
 
 .input{
-    width: 300px;
-    height: 40px;
+    width: 400px;
+    height: 60px;
     border: none;
     background: none;
 }
@@ -72,4 +88,12 @@ h1{
 .actualizacion{
     color: gray;
     opacity: .8;
+}
+
+ul{
+    font-size: 40px;
+}
+
+p{
+    font-size: 40px;
 }
