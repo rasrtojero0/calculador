@@ -1,3 +1,10 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
 body{
    background: linear-gradient(45deg, rgb(3,63,167)0%, rgb(0, 55, 150) 70%);
    display: flex;   
@@ -71,6 +78,7 @@ h1{
 }
 
 .input{
+    font-size: 40px;
     width: 400px;
     height: 60px;
     border: none;
