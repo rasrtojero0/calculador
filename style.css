@@ -12,7 +12,8 @@ h1{
 }
 
 .container {
-    width: 90%;
+    min-width: 700px;
+    max-width: 1000px;
     height: 2000px;
     background: rgb(157,0,255);
     background: linear-gradient(90deg, rgba(157,0,255,1) 0%, rgba(226,0,255,0.8916608879880077) 74%);
