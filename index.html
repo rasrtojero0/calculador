@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+ <!-- AGREGAR ALERT SI BRUTO SUPERA $225000 POR GANANCIAS -->
+    <title>CALCULO</title>
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <h1>Calculador de puntos</h1>
+            <hr>
+            <h4 class="titulos">Puntos del mes<h4>
+            
+            <input type="text" id="texto" placeholder="Cuantos puntos?" class="input">
+            <br>
+            <h4 class="titulos">Años de antigüedad</h4>
+            <input type="number" value="4" id="annos" class="input">
+            <br>
+            <input type="checkbox" id="cb" value="0" >Con movilidad
+            <br>
+            <input type="button" id="boton" value="Calcular" class="botones">
+            <input type="button" id="reload" value="Borrar" class="botones">
+            <hr>
+            <div id="mostrarTexto">
+                <h2></h2>
+            </div>
+        </main>
+        <footer class="footer">
+            <p><b>Info</b></p>
+            <ul>
+                <li>Sueldo básico: <b>$132912</b></li>
+                <li>Valor punto producción: <b>60.91</b></li>
+                <li>Valor punto movilidad: <b>17.24</b></li>
+            </ul>
+            <p><b>Valores calculados</b></p>
+            <ul>
+                <li id="puntosProduccion">Puntos de producción:</li>
+                <li id="puntosMovilidad">Puntos de movilidad:</li>
+                <li id="sueldoBruto">Sueldo bruto:</li>
+                <li id="sueldoNeto">Sueldo neto:</li>
+            </ul>
+            <p id="advertencia">¡Este calculador no tiene en cuenta el impuesto a las ganacias!</p>
+            <a href="https://calcularsueldo.com.ar/ganancias.html" target="_blank"><p class="ganancias">Calcular ganacias</p></a>
+            <p class="actualizacion">Ultima actualización: 14/5/2022 </p>
+        </footer>
+        
+        <script src="script.js"></script>
+    </div>
+
+</body>
+</html>
