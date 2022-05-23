@@ -119,9 +119,14 @@ h1{
 }
 
 .simulador::before{
+<<<<<<< HEAD
     content: "\1F60E";
 }
 
+=======
+    content: "\1F911"
+}
+>>>>>>> master
 .actualizacion{
     color: gray;
     opacity: .8;
