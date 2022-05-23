@@ -1,82 +1,22 @@
 //VARIABLES 
-let aumento = document.getElementById("textoPorcentaje");
-
-let base = document.getElementById("base");
-let produ = document.getElementById("produ");
-let movi = document.getElementById("movi");
-let porciento = aumento.value;
 
 let texto = document.getElementById("texto");
-
 let boton = document.getElementById("boton");
-boton.addEventListener("click",resultadoValidado);
-
+boton.addEventListener("click",resultado);
 var checa = document.getElementById('cb');
-
 var reload = document.getElementById("reload");
 reload.addEventListener("click",recargar);
-
-botonsimular = document.getElementById("simular");
-botonsimular.addEventListener("click",simule);
-
-function simule(){
-if((aumento.value == "")||(aumento.value <= 0)){
-    alert("Ingresa un número mayor que 0")
-}else{
-    simulado()
-}
-}
-
-
-function simulado(){
-    numero1 = parseFloat(base.textContent);
-    numero2 = parseFloat(aumento.value);
-    valor = numero1 + ((numero1 * numero2)/100)
-    base.textContent = valor.toFixed(2);
-    basico = valor;
-
-    numero1 = parseFloat(produ.textContent);
-    numero2 = parseFloat(aumento.value);
-    valor = numero1 + ((numero1 * numero2)/100)
-    produ.textContent = valor.toFixed(2);
-    produccion = valor
-
-    numero1 = parseFloat(movi.textContent);
-    numero2 = parseFloat(aumento.value);
-    valor = numero1 + ((numero1 * numero2)/100)
-    movi.textContent = valor.toFixed(2);
-    movilidad = valor;
-
-
-
-
-}
-
-
 let escribir = document.getElementById("mostrarTexto");
 let annos = document.getElementById("annos");
 let escribirPuntos = document.getElementById("puntosProduccion");
 let escribirMovilidad = document.getElementById("puntosMovilidad");
 let escribirBruto = document.getElementById("sueldoBruto");
 let escribirNeto = document.getElementById("sueldoNeto");
-
-let movilidad = 17.24 
+let movilidad = 17.24;
 let premiogas = 2864;
-
+let mensaje = "FUNCA";
 
 //FUNCIONES
-
-
-
-function resultadoValidado(){
-    if (aumento.value == ""){
-        alert("Completa el porcentaje!");
-    }else{
-        resultado()
-    }
-    
-    
-}
 function resultado(){
     calucoSueldo()
 
@@ -116,26 +56,25 @@ return producido
 }
 
 //CALCULO
-let basico = 132912;
-let produccion = 60.91;
 function calucoSueldo(){
     
-
+let basico = 132912;
+console.log(basico)
+let produccion = 60.91;
 let puntosProduccion = comprobar() * produccion;
 let antiguedad = (basico * .005) * annos.value;
-console.log(antiguedad);
 let puntosMovildad = resultadoMovilidad()
 
 let sueldoBruto = basico + puntosProduccion + puntosMovildad + antiguedad + premiogas;
-escribirBruto.innerHTML = ("Sueldo bruto: " + sueldoBruto.toFixed(2));
-escribirPuntos.innerHTML = ("Puntos de producción: " + puntosProduccion.toFixed(2))
+escribirBruto.innerHTML = ("Sueldo bruto: " + sueldoBruto);
+escribirPuntos.innerHTML = ("Puntos de producción: " + puntosProduccion)
 let descuentos = sueldoBruto * .2;  
 let sueldoNeto = (sueldoBruto - descuentos);  
 sueldoNeto = sueldoNeto.toFixed(2);
 escribirNeto.innerHTML = ("Sueldo neto: " + sueldoNeto);
 
 if(sueldoBruto >= 225000){
-    document.getElementById("advertencia").style.color = "red";
+    document.getElementById("advertencia").style.color = "white";
 }else{
     document.getElementById("advertencia").style.color = "black";
 }
