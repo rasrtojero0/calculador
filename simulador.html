@@ -4,26 +4,28 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
  
-    <title>CALCULO</title>
+    <title>SIMULADOR</title>
 </head>
 <body>
     <div class="container">
         <main class="main">
             <div class="fondoH1">
-                <h1>Calculador de puntos</h1>
+                <h1>Simulador de aumentos</h1>
            
             </div>
             <div class="fondomain">
+                <h4 class="titulos">Porcentaje de aumento<h4>
+                <input type="number" id="textoPorcentaje" placeholder="Qué porcentaje?" class="input" required>
                 <h4 class="titulos">Puntos del mes<h4>
-                
                 <input type="number" id="texto" placeholder="Cuantos puntos?" class="input">
                 <br>
                 <h4 class="titulos">Años de antigüedad</h4>
                 <input type="number" value="4" id="annos" class="input">
-                <br>
+                
                 <input type="checkbox" id="cb" value="0" class="check" ><p class="textocheck">Con movilidad</p>
                 <br>
-                <input type="button" id="boton" value="Calcular" class="botones">
+                <input type="button" id="simular" value="Simular" class="botones">
+                <input type="submit" id="boton" value="Calcular" class="botones">
                 <input type="button" id="reload" value="Borrar" class="botones">
             <hr>
             </div>
@@ -34,9 +36,9 @@
         <footer class="footer">
             <p><b>INFO</b></p>
             <ul>
-                <li>Sueldo básico: <b>$132912</b></li>
-                <li>Valor punto producción: <b>60.91</b></li>
-                <li>Valor punto movilidad: <b>17.24</b></li>
+                <li>Sueldo básico: <b id="base">132912</b></li>
+                <li>Valor punto producción: <b id="produ">60.91</b></li>
+                <li>Valor punto movilidad: <b id="movi">17.24</b></li>
             </ul>
             <p><b>Valores calculados</b></p>
             <ul>
@@ -45,9 +47,8 @@
                 <li id="sueldoBruto">Sueldo bruto:</li>
                 <li id="sueldoNeto">Sueldo neto:</li>
             </ul>
-            <p id="advertencia">¡Este calculador no tiene en cuenta el impuesto a las ganacias!</p>
+            <p id="advertencia">¡Este simulador no tiene en cuenta el impuesto a las ganacias!</p>
             <a href="https://calcularsueldo.com.ar/ganancias.html" target="_blank"><p class="ganancias">Calcular ganacias</p></a>
-            <a href="simulador.html"><p class="simulador">Simulador de aumentos!</p></a>
             <p class="actualizacion">Última actualización: 23/5/2022 </p>
         </footer>
         
