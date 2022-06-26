@@ -127,11 +127,12 @@ let antiguedad = (basico * .005) * annos.value;
 console.log(antiguedad);
 let puntosMovildad = resultadoMovilidad()
 
-let sueldoBruto = basico + puntosProduccion + puntosMovildad + antiguedad + premiogas;
+let sueldoBruto = basico + puntosProduccion + antiguedad;
+let noRemunerativos = puntosMovildad + premiogas;
 escribirBruto.innerHTML = ("Sueldo bruto: " + sueldoBruto.toFixed(2));
 escribirPuntos.innerHTML = ("Puntos de producción: " + puntosProduccion.toFixed(2))
-let descuentos = sueldoBruto * .2;  
-let sueldoNeto = (sueldoBruto - descuentos);  
+let descuentos = sueldoBruto * .18;  
+let sueldoNeto = (sueldoBruto - descuentos) + noRemunerativos;  
 sueldoNeto = sueldoNeto.toFixed(2);
 escribirNeto.innerHTML = ("Sueldo neto: " + sueldoNeto);
 
@@ -146,4 +147,3 @@ escribe("Sueldo neto: " + sueldoNeto)
 }
 
 // Para la jubilación es un 11%, para la obra social un 3% y el descuento INSSJP es otro descuento del 3%. La cuota sindical, no obligatoria, ronda entre el 2 y el 3%
-

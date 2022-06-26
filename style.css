@@ -123,7 +123,7 @@ h1{
 }
 
 .simulador::before{
-    content: "\1F911"
+    content: "😎"
 }
 .actualizacion{
     color: gray;
