@@ -32,6 +32,32 @@ h1{
 
 }
 
+/* .inline{
+    display: inline;
+} */
+.puntos-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.movilidad-container,.antiguedad-container{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sinAuto{
+    width: 300px;
+    margin-right: 180px;
+  
+}
+
+ul{
+    list-style-type: none;
+}
+
+.annos{
+    height: 20px;
+}
 .container {
 
     min-width: 700px;
@@ -42,6 +68,8 @@ h1{
     border-radius: 20px 20px 
   
 }
+
+
 
 .main{
     text-align: center;
@@ -136,4 +164,37 @@ ul{
 
 p{
     font-size: 40px;
+}
+.aviso{
+    color: #f81c00;
+    opacity: .9;
+    font-size: 30px;
+}
+
+/*-----------ESENCIALES------------*/
+
+.esenciales{
+    font-family: 'Poppins', sans-serif;
+}
+.link-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.link{
+
+border-radius:30px;
+width: 400px;
+height: 400px;
+box-shadow: #b006ae 20px 20px 30px;
+
+}
+
+.calculadora, .puntos, .recibos, .materiales{
+    width: 400px;
+    height: 400px;
+
 }

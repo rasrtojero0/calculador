@@ -14,14 +14,26 @@
            
             </div>
             <div class="fondomain">
-                <h4 class="titulos">Puntos del mes<h4>
+                <div class="puntos-container">
+                    <h4 class="titulos inline">Puntos del mes<h4>
+                    <input type="number" id="texto" placeholder="Cuantos puntos?" class="input inline">
+                </div>
+                <hr>
+                <div class="antiguedad-container">
+                    <h4 class="titulos">Años de antigüedad</h4>
+                    <input type="number" value="4" id="annos" class="input annos ">
+                </div>
+                <hr>
+                <div class="movilidad-container">
+                    <ul>
+                        <li><input type="checkbox" id="cb" value="0" class="check" ><p class="textocheck">Con movilidad </p></li>
+                        
+                    </ul>
+                    <!-- <input type="number" class="titulos sinAuto" placeholder="Dias sin vehiculo?"> -->
+                </div>
+                <br>
+ 
                 
-                <input type="number" id="texto" placeholder="Cuantos puntos?" class="input">
-                <br>
-                <h4 class="titulos">Años de antigüedad</h4>
-                <input type="number" value="4" id="annos" class="input">
-                <br>
-                <input type="checkbox" id="cb" value="0" class="check" ><p class="textocheck">Con movilidad</p>
                 <br>
                 <input type="button" id="boton" value="Calcular" class="botones">
                 <input type="button" id="reload" value="Borrar" class="botones">
@@ -34,9 +46,9 @@
         <footer class="footer">
             <p><b>INFO</b></p>
             <ul>
-                <li>Sueldo básico: <b>$132912</b></li>
-                <li>Valor punto producción: <b>60.91</b></li>
-                <li>Valor punto movilidad: <b>17.24</b></li>
+                <li>Sueldo básico: <b>$157969</b></li>
+                <li>Valor punto producción: <b>72.4</b></li>
+                <li>Valor punto movilidad: <b>20.49</b></li>
             </ul>
             <p><b>Valores calculados</b></p>
             <ul>
@@ -48,7 +60,7 @@
             <p id="advertencia">¡Este calculador no tiene en cuenta el impuesto a las ganacias!</p>
             <a href="https://calcularsueldo.com.ar/ganancias.html" target="_blank"><p class="ganancias">Calcular ganacias</p></a>
             <a href="simulador.html"><p class="simulador">Simulador de aumentos!</p></a>
-            <p class="actualizacion">Última actualización: 26/6/2022 </p>
+            <p class="actualizacion">Última actualización: 12/8/2022 </p>
         </footer>
         
         <script src="script.js"></script>

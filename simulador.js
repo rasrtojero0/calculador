@@ -1,3 +1,5 @@
+
+
 //VARIABLES 
 let aumento = document.getElementById("textoPorcentaje");
 
@@ -61,7 +63,7 @@ let escribirMovilidad = document.getElementById("puntosMovilidad");
 let escribirBruto = document.getElementById("sueldoBruto");
 let escribirNeto = document.getElementById("sueldoNeto");
 
-let movilidad = 17.24 
+let movilidad = 21.55 
 let premiogas = 2864;
 
 
@@ -117,8 +119,8 @@ return producido
 }
 
 //CALCULO
-let basico = 132912;
-let produccion = 60.91;
+let basico = 166140;
+let produccion = 76.14;
 function calucoSueldo(){
     
 
@@ -127,16 +129,18 @@ let antiguedad = (basico * .005) * annos.value;
 console.log(antiguedad);
 let puntosMovildad = resultadoMovilidad()
 
-let sueldoBruto = basico + puntosProduccion + antiguedad;
+
 let noRemunerativos = puntosMovildad + premiogas;
-escribirBruto.innerHTML = ("Sueldo bruto: " + sueldoBruto.toFixed(2));
+let sueldoBruto1 = basico + puntosProduccion + antiguedad + noRemunerativos;
+let sueldoBruto = basico + puntosProduccion + antiguedad;
+escribirBruto.innerHTML = ("Sueldo bruto: " + sueldoBruto1.toFixed(2));
 escribirPuntos.innerHTML = ("Puntos de producción: " + puntosProduccion.toFixed(2))
 let descuentos = sueldoBruto * .18;  
 let sueldoNeto = (sueldoBruto - descuentos) + noRemunerativos;  
 sueldoNeto = sueldoNeto.toFixed(2);
 escribirNeto.innerHTML = ("Sueldo neto: " + sueldoNeto);
 
-if(sueldoBruto >= 225000){
+if(sueldoBruto1 >= 280792){
     document.getElementById("advertencia").style.color = "red";
 }else{
     document.getElementById("advertencia").style.color = "black";
