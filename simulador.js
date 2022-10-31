@@ -63,8 +63,8 @@ let escribirMovilidad = document.getElementById("puntosMovilidad");
 let escribirBruto = document.getElementById("sueldoBruto");
 let escribirNeto = document.getElementById("sueldoNeto");
 
-let movilidad = 21.55 
-let premiogas = 2864;
+let movilidad = 22.61 
+let premiogas = 4059;
 
 
 //FUNCIONES
@@ -119,8 +119,8 @@ return producido
 }
 
 //CALCULO
-let basico = 166140;
-let produccion = 76.14;
+let basico = 174310;
+let produccion = 79.88;
 function calucoSueldo(){
     
 
@@ -151,3 +151,4 @@ escribe("Sueldo neto: " + sueldoNeto)
 }
 
 // Para la jubilación es un 11%, para la obra social un 3% y el descuento INSSJP es otro descuento del 3%. La cuota sindical, no obligatoria, ronda entre el 2 y el 3%
+
